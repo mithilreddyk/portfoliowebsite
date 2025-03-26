@@ -75,13 +75,22 @@ const Hero = () => {
             </span>
           </motion.div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight tracking-tight"
+          >
+            Mithil Reddy K
+          </motion.h1>
+          
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
             <AnimatedText
               text="Crafting Digital Solutions with Code"
               className="text-balance"
               speed={0.03}
             />
-          </h1>
+          </h2>
           
           <motion.p
             initial={{ opacity: 0, y: 20 }}

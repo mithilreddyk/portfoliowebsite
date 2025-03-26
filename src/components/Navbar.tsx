@@ -51,7 +51,7 @@ const Navbar = () => {
           href="#home" 
           className="text-lg font-semibold font-display relative z-10 text-foreground"
         >
-          <span className="text-primary">Dev</span>Portfolio
+          Mithil Reddy K
         </a>
 
         {/* Desktop Navigation */}

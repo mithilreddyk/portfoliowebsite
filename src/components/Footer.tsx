@@ -41,7 +41,7 @@ const Footer = () => {
             className="mb-6"
           >
             <a href="#home" className="text-xl font-semibold font-display">
-              <span className="text-primary">Dev</span>Portfolio
+              Mithil Reddy K
             </a>
           </motion.div>
 
@@ -87,7 +87,7 @@ const Footer = () => {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="text-center text-muted-foreground text-sm"
           >
-            <p>© {currentYear} Dev Portfolio. All rights reserved.</p>
+            <p>© {currentYear} Mithil Reddy K. All rights reserved.</p>
             <p className="mt-1">Designed and built with precision and care.</p>
           </motion.div>
         </div>
