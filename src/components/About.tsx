@@ -92,26 +92,6 @@ const About = () => {
               </motion.p>
 
               <motion.div
-                variants={containerVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
-                className="grid grid-cols-2 gap-4 mb-8"
-              >
-                {[
-                  { label: "Name", value: "John Doe" },
-                  { label: "Email", value: "john@example.com" },
-                  { label: "Location", value: "San Francisco, CA" },
-                  { label: "Experience", value: "5+ Years" },
-                ].map((item, index) => (
-                  <motion.div key={index} variants={itemVariants} className="p-4 rounded-xl glass">
-                    <div className="text-sm text-muted-foreground mb-1">{item.label}</div>
-                    <div className="font-medium">{item.value}</div>
-                  </motion.div>
-                ))}
-              </motion.div>
-
-              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
