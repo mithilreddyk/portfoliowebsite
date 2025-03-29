@@ -70,7 +70,7 @@ const Hero = () => {
             transition={{ duration: 0.5 }}
             className="mb-3"
           >
-            <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-2">
+            <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-2 whitespace-nowrap">
               Software Engineer
             </span>
           </motion.div>
@@ -87,7 +87,7 @@ const Hero = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
             <AnimatedText
               text="Crafting Digital Solutions with Code"
-              className="text-balance"
+              className="text-balance whitespace-nowrap"
               speed={0.03}
             />
           </h2>

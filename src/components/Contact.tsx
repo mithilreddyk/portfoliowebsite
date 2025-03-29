@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
-import { ArrowRight, Mail, MapPin, Phone } from 'lucide-react';
+import { ArrowRight, Mail, MapPin, Phone, Briefcase } from 'lucide-react';
 import AnimatedText from './ui/AnimatedText';
 import { cn } from '@/lib/utils';
 
@@ -14,8 +14,8 @@ const ContactInfo = [
   {
     icon: <Mail className="h-5 w-5" />,
     title: 'Email',
-    info: 'hello@example.com',
-    link: 'mailto:hello@example.com'
+    info: 'mithilreddykoduru@gmail.com',
+    link: 'mailto:mithilreddykoduru@gmail.com'
   },
   {
     icon: <Phone className="h-5 w-5" />,
@@ -26,8 +26,14 @@ const ContactInfo = [
   {
     icon: <MapPin className="h-5 w-5" />,
     title: 'Location',
-    info: 'San Francisco, CA',
-    link: 'https://maps.google.com/?q=San+Francisco,+CA'
+    info: 'Anywhere, USA',
+    link: 'https://maps.google.com/?q=USA'
+  },
+  {
+    icon: <Briefcase className="h-5 w-5" />,
+    title: 'Experience',
+    info: '4+ Years',
+    link: '#about'
   }
 ];
 
