@@ -2,39 +2,24 @@
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import AnimatedText from './ui/AnimatedText';
-import { CheckCircle2, Code, Code2, Database, Globe, Layout, Layers, PenTool, Server, Smartphone } from 'lucide-react';
+import { CheckCircle2, Cloud, Code, Code2, Database, Globe, Layout, Layers, PenTool, Server, Smartphone } from 'lucide-react';
 
 // Skill categories with skills
 const skillCategories = [
   {
-    name: 'Frontend',
-    icon: <Layout className="h-5 w-5" />,
-    skills: ['React', 'Vue.js', 'Angular', 'TypeScript', 'JavaScript', 'HTML/CSS', 'Tailwind CSS', 'SASS/SCSS']
+    name: 'Cloud & DevOps',
+    icon: <Cloud className="h-5 w-5" />,
+    skills: ['Azure Cloud', 'Azure AI', 'AWS Lightsail', 'DevOps', 'CI/CD', 'Git', 'GitHub Actions', 'Docker']
   },
   {
-    name: 'Backend',
-    icon: <Server className="h-5 w-5" />,
-    skills: ['Node.js', 'Python', 'Java', 'C#', 'Express', 'Spring Boot', 'Django', 'Flask']
+    name: 'Salesforce',
+    icon: <Code className="h-5 w-5" />,
+    skills: ['Salesforce Development', 'Apex', 'Lightning Web Components', 'Salesforce Administration', 'Integration', 'Customization', 'Flow Builder', 'SOQL']
   },
   {
     name: 'Database',
     icon: <Database className="h-5 w-5" />,
-    skills: ['MongoDB', 'PostgreSQL', 'MySQL', 'Firebase', 'Redis', 'ElasticSearch', 'GraphQL', 'DynamoDB']
-  },
-  {
-    name: 'DevOps',
-    icon: <Code2 className="h-5 w-5" />,
-    skills: ['Docker', 'Kubernetes', 'AWS', 'CI/CD', 'Git', 'GitHub Actions', 'Terraform', 'Jenkins']
-  },
-  {
-    name: 'Mobile',
-    icon: <Smartphone className="h-5 w-5" />,
-    skills: ['React Native', 'Flutter', 'Swift', 'Kotlin', 'Ionic', 'Expo', 'Android', 'iOS']
-  },
-  {
-    name: 'Design',
-    icon: <PenTool className="h-5 w-5" />,
-    skills: ['Figma', 'Adobe XD', 'Sketch', 'UI/UX', 'Wireframing', 'Prototyping', 'Design Systems']
+    skills: ['MongoDB', 'Firebase', 'NoSQL', 'Data Modeling', 'Real-time Database', 'Firebase Authentication', 'MongoDB Atlas', 'Firestore']
   }
 ];
 
@@ -133,9 +118,9 @@ const Skills = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="mt-16 text-center"
         >
-          <h3 className="text-xl font-semibold mb-8">Languages I Speak</h3>
+          <h3 className="text-xl font-semibold mb-8">Core Technologies</h3>
           <div className="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
-            {['JavaScript', 'TypeScript', 'Python', 'Java', 'C#', 'SQL', 'HTML', 'CSS'].map((lang, i) => (
+            {['Salesforce', 'Azure AI', 'Azure Cloud', 'AWS Lightsail', 'DevOps', 'MongoDB', 'Firebase'].map((lang, i) => (
               <div 
                 key={i} 
                 className="px-4 py-2 rounded-full bg-secondary text-secondary-foreground font-medium text-sm"
