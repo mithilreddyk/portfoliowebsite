@@ -1,3 +1,4 @@
+
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
@@ -19,8 +20,8 @@ const ContactInfo = [
   {
     icon: <Phone className="h-5 w-5" />,
     title: 'Phone',
-    info: '+1 (555) 123-4567',
-    link: 'tel:+15551234567'
+    info: '+1 (845) 873-3588',
+    link: 'tel:+18458733588'
   },
   {
     icon: <MapPin className="h-5 w-5" />,
